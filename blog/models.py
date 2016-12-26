@@ -25,7 +25,7 @@ class Post(models.Model):
         return r.text.encode('utf-8')
 
     def save(self, *args, **kwargs):
-        self.text_html = self.convert_to_html()
+        #self.text_html = self.convert_to_html()
         super(Post, self).save(*args, **kwargs)
 
     def publish(self):
