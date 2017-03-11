@@ -1,13 +1,11 @@
 {% extends 'blog/base.html' %}
 {% block content %}
-
+<main class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">
     <article>
         <span class="meta">Posted on {{ post.published_date }}</span>
         <p>{{ post.text_html|safe }}</p>
     </article>
 
     <hr>
-
-
-
+</main>
 {% endblock %}
